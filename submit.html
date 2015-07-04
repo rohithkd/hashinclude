@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Question</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+         <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+         
+        <link rel="stylesheet" href="css/bower_components/font-awesome/css/font-awesome.min.css">
+        
+        
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+         <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+         
+            <link rel="stylesheet" href="styles/main.css">
+         <link rel="stylesheet" type="text/css" href="css/custom.css">
+          <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+          <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+          <script type="text/javascript" src="js/script.js"></script> 
+         
+
+        <link rel="stylesheet" href="lib/codemirror.css">
+<link rel="stylesheet" href="addon/display/fullscreen.css">
+<link rel="stylesheet" href="addon/fold/foldgutter.css">
+<link rel="stylesheet" href="addon/dialog/dialog.css">
+<link rel="stylesheet" href="theme/ambiance.css">
+<link rel="stylesheet" href="theme/blackboard.css">
+<link rel="stylesheet" href="theme/cobalt.css">
+<link rel="stylesheet" href="theme/lesser-dark.css">
+<link rel="stylesheet" href="theme/mbo.css">
+<link rel="stylesheet" href="theme/mdn-like.css">
+<link rel="stylesheet" href="theme/midnight.css">
+<link rel="stylesheet" href="theme/monokai.css">
+<link rel="stylesheet" href="theme/neat.css">
+<link rel="stylesheet" href="theme/neo.css">
+<link rel="stylesheet" href="theme/night.css">
+<link rel="stylesheet" href="theme/paraiso-dark.css">
+<link rel="stylesheet" href="theme/pastel-on-dark.css">
+<link rel="stylesheet" href="theme/solarized.css">
+          
+          
+
+        <!-- end needs images -->
+
+
+
+           
+
+
+    </head>
+    <body >
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         
+
+
+ 
+
+
+
+<div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:100; background-color:white;  height:100%; width:100%;">
+    <img src=" img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
+  </div>
+<video autoplay loop poster="" id="bgvid">
+
+<source src="video/include.webm" type="video/webm">
+
+
+
+</video>         
+
+
+<div class="row">
+<div data-ng-app="app" id="app" data-custom-background="" data-off-canvas-nav="">
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div data-ng-controller="AppCtrl">
+            <div data-ng-hide="isSpecificPage()" data-ng-cloak="">
+      <section id="header" class="top-header">
+           
+                <header class="clearfix ng-scope">
+                    <!--
+
+                     Logo 
+
+                    -->
+                    <div class="logo">
+                        <a href="question.html">
+                            <span class="ng-binding">
+
+                                #include
+
+                            </span>
+                        </a>
+                    </div>
+                    <!--
+
+                     needs to be put after logo to make it working
+
+                    -->
+                    <div class="menu-button" toggle-off-canvas="">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+        <div class="top-nav">
+            <ul class="nav-left list-unstyled"></ul>
+            <ul class="nav-right pull-right list-unstyled">
+                <li class="dropdown langs text-normal ng-scope" data-ng-controller="LangCtrl"></li>
+                <!--
+
+                             <li class="dropdown">
+                               …
+
+                -->
+                <li class="dropdown text-normal nav-profile open">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                        <img class="img-circle img30_30" alt="" src="img/profile.jpg"></img>
+                        <span class="hidden-xs">
+                            <span data-i18n="Lisa Doe">
+
+                               Rohith K D
+
+                            </span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu with-arrow pull-right">
+                        <li>
+                            <a href="profile.html">
+                                <i class="fa fa-user"></i>
+                                <span data-i18n="My Profile">
+
+                                    My Profile
+
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="submission.html">
+                                <i class="fa fa-check"></i>
+                                <span data-i18n="My Tasks">
+
+                                    My Submissions
+
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="lockscreen.html">
+                                <i class="fa fa-lock"></i>
+                                <span data-i18n="Lock">
+
+                                    Lock
+
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="signin.html">
+                                <i class="fa fa-sign-out"></i>
+                                <span data-i18n="Log Out">
+
+                                    Log Out
+
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+
+    </header>
+
+</section>
+</div>
+</div>
+
+
+<aside id="nav-container">
+<div id="nav-wrapper">
+    <ul id="nav"
+        data-ng-controller="NavCtrl"
+        data-collapse-nav
+        data-slim-scroll
+        data-highlight-active>
+        <li><a href="question.html"> <i class="fa fa-question-circle"><span class="icon-bg bg-violet"></span></i><span data-i18n="Question"></span> </a></li>
+       
+            <li>
+            <a href="profile.html"><i class="fa fa-user"><span class="icon-bg bg-orange"></span></i><span data-i18n="Profile"></span></a>
+            
+        </li>
+        <li>
+            <a href="leaderboard.html"><i class="fa fa-trophy"><span class="icon-bg bg-success"></span></i><span data-i18n="Leader Board"></span></a>
+            
+        </li>
+         <li><a href="submission.html"> <i class="fa fa-align-justify"><span class="icon-bg bg-danger"></span></i><span data-i18n="My Submission"></span></a></li>
+        
+        
+        <li>
+            <a href="contactus.html">
+                <i class="fa fa-phone"><span class="icon-bg bg-info"></span></i><span data-i18n="Contact"></span>
+               
+            </a>
+        </li>
+        <li>
+            <a href="rules.html"><i class="fa fa-book"><span class="icon-bg bg-warning"></span></i><span data-i18n="Rules"></span></a>
+            
+        </li>
+               <li>
+            <a href="signin.html"><i class="fa fa-unlock"><span class="icon-bg bg-danger"></span></i><span data-i18n="Sign out"></span></a>
+         
+        </li>
+                
+                        </ul>
+</div>
+
+</aside>
+</div>
+
+
+<div class="view-container">
+
+    <!--
+
+     ngView:  
+
+    -->
+    <section id="content" class="animate-fade-up ng-scope" data-ng-view="">
+        <div class="page page-dashboard ng-scope" data-ng-controller="DashboardCtrl">
+        <div class="row">
+        <div class="col-md-12">
+    
+
+
+<div class="challenge-header col-md-10">
+            <header class="view_header boundB">
+                
+                <ul class="nav-tabs nav" style="padding-bottom: 1px;">
+                    <li id="problemTab" class="active">
+                        <a class="hr-problem-link" href="/challenges/solve-me-first">
+
+                            Problem
+
+                        </a>
+                    </li>
+                    <li id="submissionsTab" class="">
+                        <a class="hr-submissions-link" href="discussion.html">
+
+                            Discussion Board
+                        </a>
+                    </li>
+                   
+                </ul>
+            </header>
+        </div>
+   
+        
+    <div class="col-md-12">
+
+        <div class="panel panel-default noborder">
+                             <div class="panel-body">
+
+
+                      <h2 div class="question text-center">
+
+                                  Prime Palindromes
+
+                               </h2> </div>
+                          <br><div class="questiontext questionformat">
+                              An integer is said to be a palindrome if it is equal to its reverse.<br />For example,&nbsp;79197 and 324423 are palindromes.&nbsp;
+                              In this task<br />you will be given an integer N, &nbsp;1 ≤ N ≤ 1000000. &nbsp;
+                              You must find<br />the smallest integer M ≥ N such that M is a prime number and M is a<br />palindrome.<br />
+                              For example,&nbsp; if N is 31 then the answer is 101.&nbsp;<br /><br />Input<br /><br />A single integer N,&nbsp; (1 ≤ N ≤ 1000000),&nbsp; 
+                              on a single line.&nbsp;<br /><br />Output<br /><br />Your output must consist of a single integer,&nbsp;
+                              the smallest prime<br />palindrome greater than or equal to N.&nbsp;<br /><br />
+                              <strong>Example<br /></strong>
+                              <br />
+                                
+
+
+
+
+                              <h4><strong>Sample Input:</strong></h4>
+                              <pre>
+                                          31
+                                     
+
+                                  </pre>
+                              <p>
+                              <div class="text-left"><h4><strong>Sample Output:<br /></strong></h4></div>
+                              <pre>
+                                         101
+                                     
+
+                                  </pre>
+                         <p>
+                                          
+
+                                   
+                        <div class="wordspacing menuspacing questionformat"> Participants:<span style="color:#999999;">100 </span>  Maxscore:<span style="color:#999999;">10</span>  Difficulty:<span style="color:#999999;">Easy</span></div> 
+                          
+                     
+                          
+</div>
+
+
+
+<div class="row">
+<div class ="col-md-12">
+
+<br>
+<p><center>Select a theme: <select onchange="selectTheme()" id="selectt">
+    <option>default</option>
+    <option>solarized dark</option>
+    <option>solarized light</option>
+    <option selected>monokai</option>
+    <option>ambiance</option>
+    <option>blackboard</option>
+    <option>cobalt</option>
+    <option>lesser-dark</option>
+    <option>mbo</option>
+    <option>mdn-like</option>
+    <option>midnight</option>
+    <option>neat</option>
+    <option>neo</option>
+    <option>night</option>
+    <option>paraiso-dark</option>
+    <option>pastel-on-dark</option>
+</select>
+</p></center>
+<div><textarea id="c-code">
+/* C demo code */
+
+#include <stdio.h>
+#include <malloc.h>
+int main(){
+  printf("hello world!");
+  return 0;
+}
+</textarea></div>
+<center>
+<input type="file" onchange="onFileSelected(event)">
+<br>
+</center>
+<div >
+<a  href="fullscreen.html">
+<button   class="btn btn-success btn-lg pull-left" >
+Go Full screen</button></a>
+<span style="padding-right:10%">
+<button  class="btn btn-success btn-lg pull-right" >
+Submit the Code</button>
+</span>
+
+<span style="padding-left:15%">
+<button class="btn btn-success btn-lg " onclick="downloadCode()">Download my code </button>
+</span>
+</div>
+<script src="lib/codemirror.js"></script>
+<script src="addon/search/searchcursor.js"></script>
+<script src="addon/search/search.js"></script>
+<script src="addon/dialog/dialog.js"></script>
+<script src="addon/edit/matchbrackets.js"></script>
+<script src="addon/edit/closebrackets.js"></script>
+<script src="addon/comment/comment.js"></script>
+<script src="addon/wrap/hardwrap.js"></script>
+<script src="addon/fold/foldcode.js"></script>
+<script src="addon/fold/brace-fold.js"></script>
+<script src="addon/display/fullscreen.js"></script>
+<script type="text/javascript" src="mode/clike/clike.js"></script>
+<script type="text/javascript" src="mode/python/python.js"></script>
+<script type="text/javascript" src="mode/javascript/javascript.js"></script>
+<script type="text/javascript" src="mode/go/go.js"></script>
+<script src="keymap/sublime.js"></script>
+<script type="text/javascript" src="editor.js"></script>
+
+<script src="scripts/vendor.js"></script>
+
+        <script src="scripts/ui.js"></script>
+
+
+
+        <script src="scripts/app.js"></script>
+        
+<script src="js/bootstrap.min.js"></script>
+
+
+</div>
+</body>
+</html>
